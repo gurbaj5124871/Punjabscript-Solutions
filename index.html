@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punjabscript Solutions</title>
+    <meta name="description"
+        content="Exporter of Software Development Services.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            --white: white;
+            --black: #080808;
+            --start-color: #ff4d4d;
+            --end-color: #f9cb28;
+        }
+
+        body {
+            font-family: Inter;
+            background-color: var(--black);
+        }
+
+        .container {
+            padding: 2rem;
+            margin: 3rem auto;
+            max-width: 48ch;
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 1.5rem;
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(90deg,
+                    var(--start-color),
+                    var(--end-color));
+        }
+
+        .intro {
+            margin-top: 4rem;
+        }
+
+        .intro,
+        .outro {
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: var(--white);
+        }
+
+        .section-title {
+            font-weight: 800;
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(90deg,
+                    var(--start-color),
+                    var(--end-color));
+            margin-top: 4rem;
+        }
+
+        .clients {
+            margin-top: 2rem;
+            display: grid;
+            grid-gap: 5ch;
+        }
+
+        .client {
+            max-width: 52ch;
+            display: grid;
+            gap: 0.5rem;
+        }
+
+        .client:last-of-type::after {
+            margin-top: 1.5rem;
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-image: linear-gradient(90deg,
+                    var(--start-color),
+                    var(--end-color));
+        }
+
+        .client-info {
+            font-size: 1rem;
+            color: var(--white);
+            line-height: 1.5;
+            margin-top: 0.5rem;
+        }
+
+        img {
+            width: 100px;
+            color: --var(white);
+        }
+
+        .location-label {
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--white);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(90deg,
+                    var(--start-color),
+                    var(--end-color));
+        }
+
+        footer {
+            margin: 2rem 0;
+        }
+
+        .mail {
+            display: block;
+            font-size: 1rem;
+            color: var(--white);
+            line-height: 1.2;
+            text-align: center;
+            margin: 2rem auto 0;
+        }
+
+        .mail,
+        .mail:visited {
+            text-decoration: none;
+        }
+
+        .mail:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">PUNJABSCRIPT SOLUTIONS</h1>
+            <p class="intro">A software development company specialising in exporting backend, machine learning, data, devops and frontend services.</p>
+        </header>
+        <!-- <h2 class="section-title">SOME TEXT HERE</h2> -->
+        <section class="clients">
+            <div class="client">
+                <!-- <img src="" alt="Text when image missing"></img>
+                <p class="location-label">Some, LOCATION</p> -->
+                <p class="client-info"></p>
+            </div>
+        </section>
+        <footer>
+            <p class="outro">Reach out:</p>
+            <a class="mail" href="mailto:gurbaj@punjabscript.com">gurbaj@punjabscript.com</a>
+        </footer>
+    </div>
+</body>
+
+</html>
